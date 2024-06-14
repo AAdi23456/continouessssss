@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const cors=require("cors")
 const app = express();
-const port = 3000;
+const port = 30001;
 
 const url = 'https://learning-management-system-a3kr.onrender.com/isAlive'; // Replace with your route
 const maxRequests = 300000;
