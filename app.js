@@ -37,6 +37,9 @@ app.get('/trigger', (req, res) => {
 
     sendRequest();
 });
+app.get("isAlive",(req,res)=>{
+    return res.json(200).json({msg:"hey  i am alive"})
+})
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
