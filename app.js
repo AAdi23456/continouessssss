@@ -10,7 +10,7 @@ const interval = 30000; // 30 seconds
 app.use(cors())
 app.use(express.static('public'));
 
-app.get('/trigger', (req, res) => {
+app.get('/isAlive', (req, res) => {
     let count = 0;
 
     function sendRequest() {
@@ -37,9 +37,6 @@ app.get('/trigger', (req, res) => {
 
     sendRequest();
 });
-app.get("/isAlive",(req,res)=>{
-    return res.status(200).json({msg:"hey  i am alive"})
-})
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
